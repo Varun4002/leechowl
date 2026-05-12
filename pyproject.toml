@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leechowl"
+version = "0.1.0"
+description = "Universal CLI downloader - videos, files, torrents"
+requires-python = ">=3.10"
+
+[project.scripts]
+leechowl = "leechowl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
