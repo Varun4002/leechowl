@@ -1,4 +1,3 @@
-<![CDATA[
 <div align="center">
 
 ```
@@ -126,19 +125,24 @@ Default: `~/Downloads/leechowl/`
 
 ```
 leechowl/
+├── .gitignore
 ├── pyproject.toml
-└── leechowl/
-    ├── __init__.py          # exports Leechowl
-    ├── __main__.py          # python -m leechowl
-    ├── cli.py               # argparse CLI
-    ├── constants.py         # file extensions, directory names
-    ├── core.py              # Leechowl orchestrator
-    ├── downloaders/
-    │   ├── base.py          # abstract base downloader
-    │   ├── media.py         # yt-dlp media downloads
-    │   ├── direct.py        # aria2c direct downloads
-    │   └── torrent.py       # aria2c torrent downloads
-    └── utils/
-        └── classify.py      # URL type detection
+├── README.md
+└── src/
+    └── leechowl/
+        ├── __init__.py
+        ├── __main__.py
+        ├── cli.py
+        ├── constants.py
+        ├── core.py
+        ├── downloaders/
+        │   ├── __init__.py
+        │   ├── base.py
+        │   ├── direct.py
+        │   ├── media.py
+        │   └── torrent.py
+        └── utils/
+            ├── __init__.py
+            └── classify.py
 ```
-]]># leechowl
+
